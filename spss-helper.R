@@ -1,0 +1,12 @@
+
+
+variables <- c("IL1BETA","IL2","IL4","IL5","IL6","IL9","IL10","IL12P70","IL13","IL17A","IL22","IL23","IFNGAMMA","TNFALPHA","IL8","MIP1ALPHA","MIP1BETA","MCP1","GCSF","MIG","HGF","SILR2","CD30","VEGF","IP10")
+
+variables <- c("IL1BETA_HIGH","IL2_HIGH","IL4_HIGH","IL5_HIGH","IL6_HIGH","IL9_HIGH","IL10_HIGH","IL12P70_HIGH","IL13_HIGH","IL17A_HIGH","IL22_HIGH","IL23_HIGH","IFNGAMMA_HIGH","TNFALPHA_HIGH","IL8_HIGH","MIP1ALPHA_HIGH","MIP1BETA_HIGH","MCP1_HIGH","GCSF_HIGH","MIG_HIGH","HGF_HIGH","SILR2_HIGH","CD30_HIGH","VEGF_HIGH","IP10_HIGH")
+
+functionText<-readClipboard();
+
+
+for(variable in variables) {
+  cat(gsub("_variable_",variable,functionText),sep="\n")
+}
